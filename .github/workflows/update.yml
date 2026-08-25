@@ -2,8 +2,8 @@ name: Update user agents
 
 on:
   schedule:
-    # Chrome ships at no fixed hour, so check a few times a day.
-    - cron: "17 */6 * * *"
+    # Check for stable Chrome releases every Monday.
+    - cron: "17 0 * * 1"
   workflow_dispatch:
 
 permissions:
