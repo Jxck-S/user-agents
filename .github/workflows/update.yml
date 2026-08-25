@@ -1,0 +1,43 @@
+name: Update user agents
+
+on:
+  schedule:
+    # Chrome ships at no fixed hour, so check a few times a day.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-user-agents
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Regenerate
+        run: python -m chrome_ua
+
+      - name: Verify the regenerated data
+        run: python -m unittest discover -s tests -t .
+
+      - name: Commit if Chrome moved
+        run: |
+          if git diff --quiet -- data/; then
+            echo "No Chrome release changes."
+            exit 0
+          fi
+          version=$(python -c "import json;print(json.load(open('data/latest.json'))['versions']['windows'])")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "data: Chrome ${version}"
+          git push

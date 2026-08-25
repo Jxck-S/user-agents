@@ -1,0 +1,36 @@
+{
+  "_comment": [
+    "Host-OS details that Chrome's release feed does not carry. These are the",
+    "ONLY hand-maintained values in this repo; everything else is derived from",
+    "upstream Chrome releases or ported from Chromium source. They feed the",
+    "high-entropy client hints, except ios_version, which also appears in the",
+    "iOS user agent because Chrome on iOS is not UA-reduced.",
+    "",
+    "Bump os_versions_verified whenever you review these. The generator warns",
+    "once they are more than 180 days old, so drift shows up instead of quietly",
+    "shipping year-old numbers."
+  ],
+
+  "_windows_note": [
+    "On Windows, Sec-CH-UA-Platform-Version is NOT the Windows version. Chrome",
+    "reports the UniversalApiContract version (user_agent_utils.cc,",
+    "GetUniversalApiContractVersion). Known mapping:",
+    "  Windows 10 1507..22H2 -> 1.0.0 .. 10.0.0",
+    "  Windows 11 21H2       -> 14.0.0",
+    "  Windows 11 22H2/23H2  -> 15.0.0",
+    "  Windows 11 24H2+      -> higher; Chromium currently caps its fallback at 19",
+    "Anything >= 13.0.0 means Windows 11. Use 10.0.0 to present as Windows 10."
+  ],
+
+  "os_versions_verified": "2026-08-25",
+
+  "ios_version": "26.0",
+  "os_versions": {
+    "windows": "15.0.0",
+    "macos": "26.0.0",
+    "linux": "",
+    "chromeos": "14541.0.0",
+    "android-phone": "16.0.0",
+    "android-tablet": "16.0.0"
+  }
+}
