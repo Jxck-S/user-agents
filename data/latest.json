@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T20:04:21Z",
+  "generated_at": "2026-08-31T05:36:16Z",
   "channel": "stable",
   "versions": {
     "windows": "152.0.7977.65",
     "macos": "152.0.7977.65",
     "linux": "152.0.7977.64",
-    "chromeos": "151.0.7922.168",
+    "chromeos": "151.0.7922.221",
     "android-phone": "151.0.7922.173",
     "android-tablet": "151.0.7922.173",
     "ios-phone": "152.0.7977.64",
