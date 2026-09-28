@@ -5,10 +5,11 @@ import json
 import re
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from chrome_ua import build as build_mod
 from chrome_ua.environments import BY_ID, ENVIRONMENTS
-from chrome_ua.versions import Release
+from chrome_ua.versions import Release, VersionLookupError
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((REPO_ROOT / "config.json").read_text())
@@ -71,6 +72,34 @@ class ClientHintsTest(unittest.TestCase):
     def test_full_version_list_carries_the_exact_build(self):
         hints = entry("windows")["client_hints"]["high_entropy"]
         self.assertIn("151.0.7922.174", hints["Sec-CH-UA-Full-Version-List"])
+
+
+class UpstreamOutageTest(unittest.TestCase):
+    """A platform the API cannot answer for keeps its last published release."""
+
+    def build(self, previous):
+        def fetch(platform, channel, timeout):
+            if platform == BY_ID["chromeos"].version_platform:
+                raise VersionLookupError(f"{platform}/{channel}: HTTP 500")
+            return [Release("153.0.8010.37", 1.0)]
+
+        with mock.patch.object(build_mod, "fetch_releases", side_effect=fetch):
+            return build_mod.build_document(CONFIG, channels=("stable",), previous=previous)
+
+    def test_failed_platform_falls_back_to_the_previous_document(self):
+        previous = {"channels": {"stable": {"environments": {
+            "chromeos": entry("chromeos", "152.0.7977.113"),
+        }}}}
+        document, warnings = self.build(previous)
+        stable = document["channels"]["stable"]
+        self.assertEqual(set(stable["environments"]), {env.id for env in ENVIRONMENTS})
+        self.assertEqual(stable["versions"]["chromeos"], "152.0.7977.113")
+        self.assertEqual(stable["versions"]["windows"], "153.0.8010.37")
+        self.assertTrue(any("keeping last published" in w for w in warnings))
+
+    def test_failed_platform_is_dropped_without_a_previous_document(self):
+        document, _ = self.build(previous=None)
+        self.assertNotIn("chromeos", document["channels"]["stable"]["environments"])
 
 
 class PublishedDataTest(unittest.TestCase):
