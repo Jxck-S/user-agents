@@ -115,12 +115,26 @@ def build_entry(env: Environment, release: Release, config: dict) -> dict:
     }
 
 
+def previous_release(previous: dict | None, channel: str, env_id: str) -> Release | None:
+    """The release ``env_id`` was last published with, if there is one."""
+    try:
+        entry = previous["channels"][channel]["environments"][env_id]
+        return Release(entry["chrome_version"], entry["rollout_fraction"])
+    except (KeyError, TypeError):
+        return None
+
+
 def build_document(config: dict, channels=CHANNELS, prefer: str = "rollout",
-          timeout: float = 30.0) -> tuple[dict, list[str]]:
-    """Build the full document. Returns the document and any per-env warnings."""
+          timeout: float = 30.0, previous: dict | None = None) -> tuple[dict, list[str]]:
+    """Build the full document. Returns the document and any per-env warnings.
+
+    When the API cannot answer for a platform, environments on it keep the
+    release they were last published with in ``previous`` rather than
+    disappearing from the output.
+    """
     warnings: list[str] = []
     channel_docs: dict[str, dict] = {}
-    cache: dict[tuple[str, str], Release] = {}
+    cache: dict[tuple[str, str], Release | None] = {}
 
     for channel in channels:
         entries: dict[str, dict] = {}
@@ -133,8 +147,16 @@ def build_document(config: dict, channels=CHANNELS, prefer: str = "rollout",
                     )
                 except VersionLookupError as exc:
                     warnings.append(str(exc))
+                    cache[key] = None
+            release = cache[key]
+            if release is None:
+                release = previous_release(previous, channel, env.id)
+                if release is None:
                     continue
-            entries[env.id] = build_entry(env, cache[key], config)
+                warnings.append(
+                    f"{env.id}/{channel}: keeping last published {release.version}"
+                )
+            entries[env.id] = build_entry(env, release, config)
         if entries:
             channel_docs[channel] = {
                 "versions": {

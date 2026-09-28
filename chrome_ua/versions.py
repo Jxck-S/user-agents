@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -37,18 +38,40 @@ def _get(url: str, timeout: float) -> dict:
         return json.loads(response.read().decode("utf-8"))
 
 
-def fetch_releases(platform: str, channel: str, timeout: float = 30.0) -> list[Release]:
+def _get_with_retry(url: str, timeout: float, attempts: int, backoff: float) -> dict:
+    """``_get``, retrying server errors and network failures.
+
+    4xx responses are the request's fault and are raised immediately.
+    """
+    for attempt in range(1, attempts + 1):
+        try:
+            return _get(url, timeout)
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 or attempt == attempts:
+                raise
+        except OSError:
+            # URLError, and read timeouts, which urllib raises unwrapped.
+            if attempt == attempts:
+                raise
+        time.sleep(backoff * 2 ** (attempt - 1))
+    raise AssertionError("unreachable")
+
+
+def fetch_releases(platform: str, channel: str, timeout: float = 30.0,
+                   attempts: int = 3, backoff: float = 2.0) -> list[Release]:
     """Return the releases currently being served for a platform and channel."""
     query = urllib.parse.urlencode(
         {"filter": "endtime=none", "order_by": "version desc", "page_size": 20}
     )
     url = f"{RELEASES_PATH.format(root=API_ROOT, platform=platform, channel=channel)}?{query}"
     try:
-        payload = _get(url, timeout)
+        payload = _get_with_retry(url, timeout, attempts, backoff)
     except urllib.error.HTTPError as exc:
         raise VersionLookupError(f"{platform}/{channel}: HTTP {exc.code}") from exc
     except urllib.error.URLError as exc:
         raise VersionLookupError(f"{platform}/{channel}: {exc.reason}") from exc
+    except OSError as exc:
+        raise VersionLookupError(f"{platform}/{channel}: {exc}") from exc
 
     releases = [
         Release(version=item["version"], fraction=float(item.get("fraction", 0.0)))

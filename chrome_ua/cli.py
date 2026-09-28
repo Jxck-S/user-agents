@@ -53,7 +53,8 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     document, warnings = build_document(
-        config, channels=args.channels, prefer=args.prefer, timeout=args.timeout
+        config, channels=args.channels, prefer=args.prefer, timeout=args.timeout,
+        previous=_load(args.out / "user-agents.json"),
     )
     for warning in warnings:
         print(f"warning: {warning}", file=sys.stderr)
@@ -84,12 +85,16 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
-def _differs(document: dict, path: Path) -> bool:
-    if not path.exists():
-        return True
+def _load(path: Path) -> dict | None:
     try:
-        old = json.loads(path.read_text())
-    except json.JSONDecodeError:
+        return json.loads(path.read_text())
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+
+def _differs(document: dict, path: Path) -> bool:
+    old = _load(path)
+    if old is None:
         return True
     drop = lambda d: {k: v for k, v in d.items() if k != "generated_at"}
     return drop(old) != drop(document)
