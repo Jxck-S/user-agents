@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T23:40:07Z",
+  "generated_at": "2026-10-05T05:41:32Z",
   "version_preference": "rollout",
   "os_versions_verified": "2026-08-25",
   "source": {
@@ -19,14 +19,14 @@
   "channels": {
     "stable": {
       "versions": {
-        "windows": "154.0.8037.58",
-        "macos": "154.0.8037.58",
-        "linux": "154.0.8037.57",
-        "chromeos": "152.0.7977.113",
-        "android-phone": "154.0.8037.57",
-        "android-tablet": "154.0.8037.57",
-        "ios-phone": "154.0.8037.55",
-        "ios-tablet": "154.0.8037.55"
+        "windows": "154.0.8037.98",
+        "macos": "154.0.8037.98",
+        "linux": "154.0.8037.97",
+        "chromeos": "154.0.8037.96",
+        "android-phone": "154.0.8037.92",
+        "android-tablet": "154.0.8037.92",
+        "ios-phone": "155.0.8059.24",
+        "ios-tablet": "155.0.8059.24"
       },
       "environments": {
         "windows": {
@@ -36,7 +36,7 @@
           "os_version": "15.0.0",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "154.0.8037.58",
+          "chrome_version": "154.0.8037.98",
           "chrome_major": 154,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
@@ -51,7 +51,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"15.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.58\", \"Google Chrome\";v=\"154.0.8037.58\", \"Not A(Brand\";v=\"99.0.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.98\", \"Google Chrome\";v=\"154.0.8037.98\", \"Not A(Brand\";v=\"99.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -64,7 +64,7 @@
           "os_version": "26.0.0",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "154.0.8037.58",
+          "chrome_version": "154.0.8037.98",
           "chrome_major": 154,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
@@ -79,7 +79,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"26.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.58\", \"Google Chrome\";v=\"154.0.8037.58\", \"Not A(Brand\";v=\"99.0.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.98\", \"Google Chrome\";v=\"154.0.8037.98\", \"Not A(Brand\";v=\"99.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -92,7 +92,7 @@
           "os_version": "",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "154.0.8037.57",
+          "chrome_version": "154.0.8037.97",
           "chrome_major": 154,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
@@ -107,7 +107,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.57\", \"Google Chrome\";v=\"154.0.8037.57\", \"Not A(Brand\";v=\"99.0.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.97\", \"Google Chrome\";v=\"154.0.8037.97\", \"Not A(Brand\";v=\"99.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -120,13 +120,13 @@
           "os_version": "14541.0.0",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "152.0.7977.113",
-          "chrome_major": 152,
+          "chrome_version": "154.0.8037.96",
+          "chrome_major": 154,
           "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+          "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
           "client_hints": {
             "low_entropy": {
-              "Sec-CH-UA": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\"",
+              "Sec-CH-UA": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
               "Sec-CH-UA-Mobile": "?0",
               "Sec-CH-UA-Platform": "\"Chrome OS\""
             },
@@ -135,7 +135,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"14541.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"152.0.7977.113\", \"Not?A_Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"152.0.7977.113\"",
+              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.96\", \"Google Chrome\";v=\"154.0.8037.96\", \"Not A(Brand\";v=\"99.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -148,9 +148,9 @@
           "os_version": "16.0.0",
           "form_factor": "phone",
           "engine": "blink",
-          "chrome_version": "154.0.8037.57",
+          "chrome_version": "154.0.8037.92",
           "chrome_major": 154,
-          "rollout_fraction": 0.995,
+          "rollout_fraction": 0.4975,
           "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
           "client_hints": {
             "low_entropy": {
@@ -163,7 +163,7 @@
               "Sec-CH-UA-Bitness": "\"\"",
               "Sec-CH-UA-Model": "\"K\"",
               "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.57\", \"Google Chrome\";v=\"154.0.8037.57\", \"Not A(Brand\";v=\"99.0.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.92\", \"Google Chrome\";v=\"154.0.8037.92\", \"Not A(Brand\";v=\"99.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Mobile\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -176,9 +176,9 @@
           "os_version": "16.0.0",
           "form_factor": "tablet",
           "engine": "blink",
-          "chrome_version": "154.0.8037.57",
+          "chrome_version": "154.0.8037.92",
           "chrome_major": 154,
-          "rollout_fraction": 0.995,
+          "rollout_fraction": 0.4975,
           "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
           "client_hints": {
             "low_entropy": {
@@ -191,7 +191,7 @@
               "Sec-CH-UA-Bitness": "\"\"",
               "Sec-CH-UA-Model": "\"K\"",
               "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.57\", \"Google Chrome\";v=\"154.0.8037.57\", \"Not A(Brand\";v=\"99.0.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.92\", \"Google Chrome\";v=\"154.0.8037.92\", \"Not A(Brand\";v=\"99.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Tablet\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -204,10 +204,10 @@
           "os_version": "26.0",
           "form_factor": "phone",
           "engine": "webkit",
-          "chrome_version": "154.0.8037.55",
-          "chrome_major": 154,
+          "chrome_version": "155.0.8059.24",
+          "chrome_major": 155,
           "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1",
+          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.24 Mobile/15E148 Safari/604.1",
           "client_hints": null
         },
         "ios-tablet": {
@@ -217,24 +217,24 @@
           "os_version": "26.0",
           "form_factor": "tablet",
           "engine": "webkit",
-          "chrome_version": "154.0.8037.55",
-          "chrome_major": 154,
+          "chrome_version": "155.0.8059.24",
+          "chrome_major": 155,
           "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1",
+          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.24 Mobile/15E148 Safari/604.1",
           "client_hints": null
         }
       }
     },
     "beta": {
       "versions": {
-        "windows": "155.0.8059.12",
-        "macos": "155.0.8059.12",
-        "linux": "155.0.8059.12",
-        "chromeos": "154.0.8037.15",
-        "android-phone": "155.0.8059.16",
-        "android-tablet": "155.0.8059.16",
-        "ios-phone": "155.0.8059.16",
-        "ios-tablet": "155.0.8059.16"
+        "windows": "156.0.8078.4",
+        "macos": "156.0.8078.4",
+        "linux": "156.0.8078.4",
+        "chromeos": "155.0.8059.18",
+        "android-phone": "156.0.8078.4",
+        "android-tablet": "156.0.8078.4",
+        "ios-phone": "156.0.8078.3",
+        "ios-tablet": "156.0.8078.3"
       },
       "environments": {
         "windows": {
@@ -244,215 +244,7 @@
           "os_version": "15.0.0",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "155.0.8059.12",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Windows\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"x86\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"15.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8059.12\", \"Chromium\";v=\"155.0.8059.12\", \"Not(A:Brand\";v=\"24.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "macos": {
-          "id": "macos",
-          "label": "macOS (Apple silicon)",
-          "os": "macOS",
-          "os_version": "26.0.0",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "155.0.8059.12",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"macOS\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"arm\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"26.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8059.12\", \"Chromium\";v=\"155.0.8059.12\", \"Not(A:Brand\";v=\"24.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "linux": {
-          "id": "linux",
-          "label": "Linux (x86_64)",
-          "os": "Linux",
-          "os_version": "",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "155.0.8059.12",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Linux\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"x86\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"\"",
-              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8059.12\", \"Chromium\";v=\"155.0.8059.12\", \"Not(A:Brand\";v=\"24.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "chromeos": {
-          "id": "chromeos",
-          "label": "ChromeOS (x86_64)",
-          "os": "ChromeOS",
-          "os_version": "14541.0.0",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "154.0.8037.15",
-          "chrome_major": 154,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Chrome OS\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"x86\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"14541.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8037.15\", \"Google Chrome\";v=\"154.0.8037.15\", \"Not A(Brand\";v=\"99.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "android-phone": {
-          "id": "android-phone",
-          "label": "Android phone",
-          "os": "Android",
-          "os_version": "16.0.0",
-          "form_factor": "phone",
-          "engine": "blink",
-          "chrome_version": "155.0.8059.16",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-              "Sec-CH-UA-Mobile": "?1",
-              "Sec-CH-UA-Platform": "\"Android\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"\"",
-              "Sec-CH-UA-Bitness": "\"\"",
-              "Sec-CH-UA-Model": "\"K\"",
-              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8059.16\", \"Chromium\";v=\"155.0.8059.16\", \"Not(A:Brand\";v=\"24.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Mobile\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "android-tablet": {
-          "id": "android-tablet",
-          "label": "Android tablet",
-          "os": "Android",
-          "os_version": "16.0.0",
-          "form_factor": "tablet",
-          "engine": "blink",
-          "chrome_version": "155.0.8059.16",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Android\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"\"",
-              "Sec-CH-UA-Bitness": "\"\"",
-              "Sec-CH-UA-Model": "\"K\"",
-              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8059.16\", \"Chromium\";v=\"155.0.8059.16\", \"Not(A:Brand\";v=\"24.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Tablet\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "ios-phone": {
-          "id": "ios-phone",
-          "label": "iPhone",
-          "os": "iOS",
-          "os_version": "26.0",
-          "form_factor": "phone",
-          "engine": "webkit",
-          "chrome_version": "155.0.8059.16",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.16 Mobile/15E148 Safari/604.1",
-          "client_hints": null
-        },
-        "ios-tablet": {
-          "id": "ios-tablet",
-          "label": "iPad",
-          "os": "iPadOS",
-          "os_version": "26.0",
-          "form_factor": "tablet",
-          "engine": "webkit",
-          "chrome_version": "155.0.8059.16",
-          "chrome_major": 155,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.16 Mobile/15E148 Safari/604.1",
-          "client_hints": null
-        }
-      }
-    },
-    "dev": {
-      "versions": {
-        "windows": "156.0.8072.0",
-        "macos": "156.0.8072.0",
-        "linux": "156.0.8072.0",
-        "chromeos": "154.0.8027.0",
-        "android-phone": "156.0.8072.0",
-        "android-tablet": "156.0.8072.0",
-        "ios-phone": "156.0.8072.1",
-        "ios-tablet": "156.0.8072.1"
-      },
-      "environments": {
-        "windows": {
-          "id": "windows",
-          "label": "Windows (x64)",
-          "os": "Windows",
-          "os_version": "15.0.0",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "156.0.8072.0",
+          "chrome_version": "156.0.8078.4",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
@@ -467,7 +259,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"15.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8072.0\", \"Google Chrome\";v=\"156.0.8072.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"Google Chrome\";v=\"156.0.8078.4\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -480,7 +272,7 @@
           "os_version": "26.0.0",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "156.0.8072.0",
+          "chrome_version": "156.0.8078.4",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
@@ -495,7 +287,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"26.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8072.0\", \"Google Chrome\";v=\"156.0.8072.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"Google Chrome\";v=\"156.0.8078.4\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -508,7 +300,7 @@
           "os_version": "",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "156.0.8072.0",
+          "chrome_version": "156.0.8078.4",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
@@ -523,7 +315,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8072.0\", \"Google Chrome\";v=\"156.0.8072.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"Google Chrome\";v=\"156.0.8078.4\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -536,215 +328,7 @@
           "os_version": "14541.0.0",
           "form_factor": "desktop",
           "engine": "blink",
-          "chrome_version": "154.0.8027.0",
-          "chrome_major": 154,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Chrome OS\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"x86\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"14541.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"154.0.8027.0\", \"Google Chrome\";v=\"154.0.8027.0\", \"Not A(Brand\";v=\"99.0.0.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "android-phone": {
-          "id": "android-phone",
-          "label": "Android phone",
-          "os": "Android",
-          "os_version": "16.0.0",
-          "form_factor": "phone",
-          "engine": "blink",
-          "chrome_version": "156.0.8072.0",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
-              "Sec-CH-UA-Mobile": "?1",
-              "Sec-CH-UA-Platform": "\"Android\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"\"",
-              "Sec-CH-UA-Bitness": "\"\"",
-              "Sec-CH-UA-Model": "\"K\"",
-              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8072.0\", \"Google Chrome\";v=\"156.0.8072.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Mobile\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "android-tablet": {
-          "id": "android-tablet",
-          "label": "Android tablet",
-          "os": "Android",
-          "os_version": "16.0.0",
-          "form_factor": "tablet",
-          "engine": "blink",
-          "chrome_version": "156.0.8072.0",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Android\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"\"",
-              "Sec-CH-UA-Bitness": "\"\"",
-              "Sec-CH-UA-Model": "\"K\"",
-              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8072.0\", \"Google Chrome\";v=\"156.0.8072.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Tablet\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "ios-phone": {
-          "id": "ios-phone",
-          "label": "iPhone",
-          "os": "iOS",
-          "os_version": "26.0",
-          "form_factor": "phone",
-          "engine": "webkit",
-          "chrome_version": "156.0.8072.1",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/156.0.8072.1 Mobile/15E148 Safari/604.1",
-          "client_hints": null
-        },
-        "ios-tablet": {
-          "id": "ios-tablet",
-          "label": "iPad",
-          "os": "iPadOS",
-          "os_version": "26.0",
-          "form_factor": "tablet",
-          "engine": "webkit",
-          "chrome_version": "156.0.8072.1",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/156.0.8072.1 Mobile/15E148 Safari/604.1",
-          "client_hints": null
-        }
-      }
-    },
-    "canary": {
-      "versions": {
-        "windows": "156.0.8077.0",
-        "macos": "156.0.8077.0",
-        "linux": "156.0.8077.0",
-        "chromeos": "155.0.8053.0",
-        "android-phone": "156.0.8077.0",
-        "android-tablet": "156.0.8077.0",
-        "ios-phone": "156.0.8077.1",
-        "ios-tablet": "156.0.8077.1"
-      },
-      "environments": {
-        "windows": {
-          "id": "windows",
-          "label": "Windows (x64)",
-          "os": "Windows",
-          "os_version": "15.0.0",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "156.0.8077.0",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Windows\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"x86\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"15.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8077.0\", \"Google Chrome\";v=\"156.0.8077.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "macos": {
-          "id": "macos",
-          "label": "macOS (Apple silicon)",
-          "os": "macOS",
-          "os_version": "26.0.0",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "156.0.8077.0",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"macOS\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"arm\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"26.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8077.0\", \"Google Chrome\";v=\"156.0.8077.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "linux": {
-          "id": "linux",
-          "label": "Linux (x86_64)",
-          "os": "Linux",
-          "os_version": "",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "156.0.8077.0",
-          "chrome_major": 156,
-          "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
-          "client_hints": {
-            "low_entropy": {
-              "Sec-CH-UA": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
-              "Sec-CH-UA-Mobile": "?0",
-              "Sec-CH-UA-Platform": "\"Linux\""
-            },
-            "high_entropy": {
-              "Sec-CH-UA-Arch": "\"x86\"",
-              "Sec-CH-UA-Bitness": "\"64\"",
-              "Sec-CH-UA-Model": "\"\"",
-              "Sec-CH-UA-Platform-Version": "\"\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8077.0\", \"Google Chrome\";v=\"156.0.8077.0\"",
-              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
-              "Sec-CH-UA-WoW64": "?0"
-            }
-          }
-        },
-        "chromeos": {
-          "id": "chromeos",
-          "label": "ChromeOS (x86_64)",
-          "os": "ChromeOS",
-          "os_version": "14541.0.0",
-          "form_factor": "desktop",
-          "engine": "blink",
-          "chrome_version": "155.0.8053.0",
+          "chrome_version": "155.0.8059.18",
           "chrome_major": 155,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
@@ -759,7 +343,7 @@
               "Sec-CH-UA-Bitness": "\"64\"",
               "Sec-CH-UA-Model": "\"\"",
               "Sec-CH-UA-Platform-Version": "\"14541.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8053.0\", \"Chromium\";v=\"155.0.8053.0\", \"Not(A:Brand\";v=\"24.0.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Google Chrome\";v=\"155.0.8059.18\", \"Chromium\";v=\"155.0.8059.18\", \"Not(A:Brand\";v=\"24.0.0.0\"",
               "Sec-CH-UA-Form-Factors": "\"Desktop\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -772,7 +356,7 @@
           "os_version": "16.0.0",
           "form_factor": "phone",
           "engine": "blink",
-          "chrome_version": "156.0.8077.0",
+          "chrome_version": "156.0.8078.4",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
@@ -787,7 +371,7 @@
               "Sec-CH-UA-Bitness": "\"\"",
               "Sec-CH-UA-Model": "\"K\"",
               "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8077.0\", \"Google Chrome\";v=\"156.0.8077.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"Google Chrome\";v=\"156.0.8078.4\"",
               "Sec-CH-UA-Form-Factors": "\"Mobile\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -800,7 +384,7 @@
           "os_version": "16.0.0",
           "form_factor": "tablet",
           "engine": "blink",
-          "chrome_version": "156.0.8077.0",
+          "chrome_version": "156.0.8078.4",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
           "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
@@ -815,7 +399,7 @@
               "Sec-CH-UA-Bitness": "\"\"",
               "Sec-CH-UA-Model": "\"K\"",
               "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
-              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8077.0\", \"Google Chrome\";v=\"156.0.8077.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"Google Chrome\";v=\"156.0.8078.4\"",
               "Sec-CH-UA-Form-Factors": "\"Tablet\"",
               "Sec-CH-UA-WoW64": "?0"
             }
@@ -828,10 +412,10 @@
           "os_version": "26.0",
           "form_factor": "phone",
           "engine": "webkit",
-          "chrome_version": "156.0.8077.1",
+          "chrome_version": "156.0.8078.3",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/156.0.8077.1 Mobile/15E148 Safari/604.1",
+          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/156.0.8078.3 Mobile/15E148 Safari/604.1",
           "client_hints": null
         },
         "ios-tablet": {
@@ -841,10 +425,426 @@
           "os_version": "26.0",
           "form_factor": "tablet",
           "engine": "webkit",
-          "chrome_version": "156.0.8077.1",
+          "chrome_version": "156.0.8078.3",
           "chrome_major": 156,
           "rollout_fraction": 1.0,
-          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/156.0.8077.1 Mobile/15E148 Safari/604.1",
+          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/156.0.8078.3 Mobile/15E148 Safari/604.1",
+          "client_hints": null
+        }
+      }
+    },
+    "dev": {
+      "versions": {
+        "windows": "157.0.8081.0",
+        "macos": "157.0.8081.0",
+        "linux": "157.0.8081.0",
+        "chromeos": "156.0.8078.5",
+        "android-phone": "157.0.8080.0",
+        "android-tablet": "157.0.8080.0",
+        "ios-phone": "157.0.8080.1",
+        "ios-tablet": "157.0.8080.1"
+      },
+      "environments": {
+        "windows": {
+          "id": "windows",
+          "label": "Windows (x64)",
+          "os": "Windows",
+          "os_version": "15.0.0",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8081.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Windows\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"x86\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"15.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8081.0\", \"Chromium\";v=\"157.0.8081.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "macos": {
+          "id": "macos",
+          "label": "macOS (Apple silicon)",
+          "os": "macOS",
+          "os_version": "26.0.0",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8081.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"macOS\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"arm\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"26.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8081.0\", \"Chromium\";v=\"157.0.8081.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "linux": {
+          "id": "linux",
+          "label": "Linux (x86_64)",
+          "os": "Linux",
+          "os_version": "",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8081.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Linux\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"x86\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8081.0\", \"Chromium\";v=\"157.0.8081.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "chromeos": {
+          "id": "chromeos",
+          "label": "ChromeOS (x86_64)",
+          "os": "ChromeOS",
+          "os_version": "14541.0.0",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "156.0.8078.5",
+          "chrome_major": 156,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Chrome OS\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"x86\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"14541.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.5\", \"Google Chrome\";v=\"156.0.8078.5\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "android-phone": {
+          "id": "android-phone",
+          "label": "Android phone",
+          "os": "Android",
+          "os_version": "16.0.0",
+          "form_factor": "phone",
+          "engine": "blink",
+          "chrome_version": "157.0.8080.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?1",
+              "Sec-CH-UA-Platform": "\"Android\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"\"",
+              "Sec-CH-UA-Bitness": "\"\"",
+              "Sec-CH-UA-Model": "\"K\"",
+              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8080.0\", \"Chromium\";v=\"157.0.8080.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Mobile\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "android-tablet": {
+          "id": "android-tablet",
+          "label": "Android tablet",
+          "os": "Android",
+          "os_version": "16.0.0",
+          "form_factor": "tablet",
+          "engine": "blink",
+          "chrome_version": "157.0.8080.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Android\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"\"",
+              "Sec-CH-UA-Bitness": "\"\"",
+              "Sec-CH-UA-Model": "\"K\"",
+              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8080.0\", \"Chromium\";v=\"157.0.8080.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Tablet\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "ios-phone": {
+          "id": "ios-phone",
+          "label": "iPhone",
+          "os": "iOS",
+          "os_version": "26.0",
+          "form_factor": "phone",
+          "engine": "webkit",
+          "chrome_version": "157.0.8080.1",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/157.0.8080.1 Mobile/15E148 Safari/604.1",
+          "client_hints": null
+        },
+        "ios-tablet": {
+          "id": "ios-tablet",
+          "label": "iPad",
+          "os": "iPadOS",
+          "os_version": "26.0",
+          "form_factor": "tablet",
+          "engine": "webkit",
+          "chrome_version": "157.0.8080.1",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/157.0.8080.1 Mobile/15E148 Safari/604.1",
+          "client_hints": null
+        }
+      }
+    },
+    "canary": {
+      "versions": {
+        "windows": "157.0.8084.0",
+        "macos": "157.0.8085.0",
+        "linux": "157.0.8084.0",
+        "chromeos": "157.0.8080.0",
+        "android-phone": "157.0.8085.0",
+        "android-tablet": "157.0.8085.0",
+        "ios-phone": "157.0.8085.4",
+        "ios-tablet": "157.0.8085.4"
+      },
+      "environments": {
+        "windows": {
+          "id": "windows",
+          "label": "Windows (x64)",
+          "os": "Windows",
+          "os_version": "15.0.0",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8084.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Windows\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"x86\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"15.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8084.0\", \"Chromium\";v=\"157.0.8084.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "macos": {
+          "id": "macos",
+          "label": "macOS (Apple silicon)",
+          "os": "macOS",
+          "os_version": "26.0.0",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8085.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"macOS\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"arm\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"26.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8085.0\", \"Chromium\";v=\"157.0.8085.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "linux": {
+          "id": "linux",
+          "label": "Linux (x86_64)",
+          "os": "Linux",
+          "os_version": "",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8084.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Linux\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"x86\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8084.0\", \"Chromium\";v=\"157.0.8084.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "chromeos": {
+          "id": "chromeos",
+          "label": "ChromeOS (x86_64)",
+          "os": "ChromeOS",
+          "os_version": "14541.0.0",
+          "form_factor": "desktop",
+          "engine": "blink",
+          "chrome_version": "157.0.8080.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Chrome OS\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"x86\"",
+              "Sec-CH-UA-Bitness": "\"64\"",
+              "Sec-CH-UA-Model": "\"\"",
+              "Sec-CH-UA-Platform-Version": "\"14541.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8080.0\", \"Chromium\";v=\"157.0.8080.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Desktop\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "android-phone": {
+          "id": "android-phone",
+          "label": "Android phone",
+          "os": "Android",
+          "os_version": "16.0.0",
+          "form_factor": "phone",
+          "engine": "blink",
+          "chrome_version": "157.0.8085.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?1",
+              "Sec-CH-UA-Platform": "\"Android\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"\"",
+              "Sec-CH-UA-Bitness": "\"\"",
+              "Sec-CH-UA-Model": "\"K\"",
+              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8085.0\", \"Chromium\";v=\"157.0.8085.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Mobile\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "android-tablet": {
+          "id": "android-tablet",
+          "label": "Android tablet",
+          "os": "Android",
+          "os_version": "16.0.0",
+          "form_factor": "tablet",
+          "engine": "blink",
+          "chrome_version": "157.0.8085.0",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+          "client_hints": {
+            "low_entropy": {
+              "Sec-CH-UA": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+              "Sec-CH-UA-Mobile": "?0",
+              "Sec-CH-UA-Platform": "\"Android\""
+            },
+            "high_entropy": {
+              "Sec-CH-UA-Arch": "\"\"",
+              "Sec-CH-UA-Bitness": "\"\"",
+              "Sec-CH-UA-Model": "\"K\"",
+              "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
+              "Sec-CH-UA-Full-Version-List": "\"Not-A.Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"157.0.8085.0\", \"Chromium\";v=\"157.0.8085.0\"",
+              "Sec-CH-UA-Form-Factors": "\"Tablet\"",
+              "Sec-CH-UA-WoW64": "?0"
+            }
+          }
+        },
+        "ios-phone": {
+          "id": "ios-phone",
+          "label": "iPhone",
+          "os": "iOS",
+          "os_version": "26.0",
+          "form_factor": "phone",
+          "engine": "webkit",
+          "chrome_version": "157.0.8085.4",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/157.0.8085.4 Mobile/15E148 Safari/604.1",
+          "client_hints": null
+        },
+        "ios-tablet": {
+          "id": "ios-tablet",
+          "label": "iPad",
+          "os": "iPadOS",
+          "os_version": "26.0",
+          "form_factor": "tablet",
+          "engine": "webkit",
+          "chrome_version": "157.0.8085.4",
+          "chrome_major": 157,
+          "rollout_fraction": 1.0,
+          "user_agent": "Mozilla/5.0 (iPad; CPU OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/157.0.8085.4 Mobile/15E148 Safari/604.1",
           "client_hints": null
         }
       }
